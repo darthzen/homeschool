@@ -7,3 +7,4 @@ multimedia:
             - blender
             - inkscape
             - gimp
+            - obs-studio
