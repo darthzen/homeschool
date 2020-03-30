@@ -49,6 +49,98 @@ home:
         - password: $1$4CosACUh$voqenPtBnOC2AYmb8w7fn0
         - enforce_password: True
 
+grant:
+    user.present:
+        - fullname: Grant Ashford
+        - shell: /bin/bash
+        - home: /home/grant
+        - uid: 1001
+        - gid: 100
+        - groups:
+            - wheel
+            - video
+        - password: $1$4CosACUh$voqenPtBnOC2AYmb8w7fn0
+        - enforce_password: True
+
+abby:
+    user.present:
+        - fullname: Abby Ashford
+        - shell: /bin/bash
+        - home: /home/home
+        - uid: 1002
+        - gid: 100
+        - groups:
+            - wheel
+            - video
+        - password: $1$4CosACUh$voqenPtBnOC2AYmb8w7fn0
+        - enforce_password: True
+
+megan:
+    user.present:
+        - fullname: Megan Ashford
+        - shell: /bin/bash
+        - home: /home/home
+        - uid: 1003
+        - gid: 100
+        - groups:
+            - wheel
+            - video
+        - password: $1$4CosACUh$voqenPtBnOC2AYmb8w7fn0
+        - enforce_password: True
+
+mallory:
+    user.present:
+        - fullname: Mallory Ashford
+        - shell: /bin/bash
+        - home: /home/home
+        - uid: 1004
+        - gid: 100
+        - groups:
+            - wheel
+            - video
+        - password: $1$4CosACUh$voqenPtBnOC2AYmb8w7fn0
+        - enforce_password: True
+
+grant-nfs:
+    mount.mounted:
+        - name: /home/grant
+        - device: ark.ash4d.com:/data/homeschool/grant
+        - fstype: nfs
+        - opts:
+            - defaults
+        - mkmnt: True
+        - user: grant
+
+abby-nfs:
+    mount.mounted:
+        - name: /home/abby
+        - device: ark.ash4d.com:/data/homeschool/abby
+        - fstype: nfs
+        - opts:
+            - defaults
+        - mkmnt: True
+        - user: abby
+
+megan-nfs:
+    mount.mounted:
+        - name: /home/megan
+        - device: ark.ash4d.com:/data/homeschool/megan
+        - fstype: nfs
+        - opts:
+            - defaults
+        - mkmnt: True
+        - user: megan
+
+mallory-nfs:
+    mount.mounted:
+        - name: /home/mallory
+        - device: ark.ash4d.com:/data/homeschool/mallory
+        - fstype: nfs
+        - opts:
+            - defaults
+        - mkmnt: True
+        - user: mallory
+
 gnome-extensions:
     file.recurse:
         - source:
