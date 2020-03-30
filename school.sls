@@ -28,3 +28,4 @@ school:
             - gnuchess
             - celestia
             - kstars
+            - stellarium
