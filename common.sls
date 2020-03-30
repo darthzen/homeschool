@@ -45,7 +45,6 @@ home:
         - gid: 100
         - groups:
             - wheel
-            - games
             - video
         - password: school
 
@@ -54,7 +53,8 @@ gnome-extensions:
         - source:
             - salt://gnome-extensions
         - name: /home/home/.local/share/gnome-shell/extensions
-
+        - user: home
+        - group: users
 
 common:
     cmd.run: 
