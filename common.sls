@@ -46,7 +46,7 @@ home:
         - groups:
             - wheel
             - video
-        - password: school
+        - password: $1$4CosACUh$voqenPtBnOC2AYmb8w7fn0
 
 gnome-extensions:
     file.recurse:
