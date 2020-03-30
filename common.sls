@@ -36,6 +36,26 @@ zoom:
     cmd.run:
         - name: zypper --non-interactive --gpg-auto-import-keys in https://zoom.us/client/latest/zoom_openSUSE_x86_64.rpm
 
+home:
+    user.present:
+        - fullname: Home School
+        - shell: /bin/bash
+        - home: /home/home
+        - uid: 1000
+        - gid: 100
+        - groups:
+            - wheel
+            - games
+            - video
+        - password: school
+
+gnome-extensions:
+    file.recurse:
+        - source:
+            - salt://gnome-extensions
+        - name: /home/home/.local/share/gnome-shell/extensions
+
+
 common:
     cmd.run: 
         - name: zypper --gpg-auto-import-keys refresh -r nvidia -r packman -r google-chrome

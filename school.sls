@@ -18,20 +18,6 @@ science:
         - gpgautoimport: 1
         - gpgkey: http://download.opensuse.org/repositories/science/openSUSE_Tumbleweed/repodata/repomd.xml.key
 
-
-home:
-    user.present:
-        - fullname: Home School
-        - shell: /bin/bash
-        - home: /home/home
-        - uid: 1000
-        - gid: 100
-        - groups:
-            - wheel
-            - games
-            - video
-        - password: school
-
 school:
     cmd.run: 
         - name: zypper --gpg-auto-import-keys refresh -r education -r science
