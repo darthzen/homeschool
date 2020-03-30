@@ -8,3 +8,4 @@ multimedia:
             - inkscape
             - gimp
             - obs-studio
+            - stopmotion
