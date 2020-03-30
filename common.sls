@@ -109,7 +109,6 @@ grant-nfs:
         - opts:
             - defaults
         - mkmnt: True
-        - user: grant
 
 abby-nfs:
     mount.mounted:
@@ -119,7 +118,6 @@ abby-nfs:
         - opts:
             - defaults
         - mkmnt: True
-        - user: abby
 
 megan-nfs:
     mount.mounted:
@@ -129,7 +127,6 @@ megan-nfs:
         - opts:
             - defaults
         - mkmnt: True
-        - user: megan
 
 mallory-nfs:
     mount.mounted:
@@ -139,7 +136,6 @@ mallory-nfs:
         - opts:
             - defaults
         - mkmnt: True
-        - user: mallory
 
 gnome-extensions:
     file.recurse:
