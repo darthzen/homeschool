@@ -66,7 +66,7 @@ abby:
     user.present:
         - fullname: Abby Ashford
         - shell: /bin/bash
-        - home: /home/home
+        - home: /home/abby
         - uid: 1002
         - gid: 100
         - groups:
@@ -79,7 +79,7 @@ megan:
     user.present:
         - fullname: Megan Ashford
         - shell: /bin/bash
-        - home: /home/home
+        - home: /home/megan
         - uid: 1003
         - gid: 100
         - groups:
@@ -92,7 +92,7 @@ mallory:
     user.present:
         - fullname: Mallory Ashford
         - shell: /bin/bash
-        - home: /home/home
+        - home: /home/mallory
         - uid: 1004
         - gid: 100
         - groups:
