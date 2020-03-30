@@ -25,3 +25,5 @@ games:
             - battleship
             - doomretro
             - frozen-bubble
+            - neverball
+            - sdl-ball
