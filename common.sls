@@ -47,6 +47,7 @@ home:
             - wheel
             - video
         - password: $1$4CosACUh$voqenPtBnOC2AYmb8w7fn0
+        - enforce_password: True
 
 gnome-extensions:
     file.recurse:
