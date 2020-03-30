@@ -26,3 +26,5 @@ school:
         - pkgs:
             - gcompris 
             - gnuchess
+            - celestia
+            - kstars
